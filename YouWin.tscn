@@ -40,15 +40,27 @@ text = "You Win!"
 align = 1
 valign = 1
 
-[node name="MainMenuButton" type="Button" parent="."]
+[node name="Next" type="Button" parent="."]
 margin_left = 382.0
 margin_top = 313.0
 margin_right = 606.0
 margin_bottom = 402.0
 custom_colors/font_color = Color( 0.909804, 0.0588235, 0.678431, 1 )
 custom_fonts/font = SubResource( 2 )
+text = "Next Level"
+flat = true
+script = ExtResource( 3 )
+
+[node name="MainMenuButton2" type="Button" parent="."]
+margin_left = 382.0
+margin_top = 385.0
+margin_right = 606.0
+margin_bottom = 474.0
+custom_colors/font_color = Color( 0.909804, 0.0588235, 0.678431, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Main Menu"
 flat = true
 script = ExtResource( 3 )
 
-[connection signal="pressed" from="MainMenuButton" to="MainMenuButton" method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="Next" to="Next" method="_on_Next_pressed"]
+[connection signal="pressed" from="MainMenuButton2" to="MainMenuButton2" method="_on_MainMenuButton_pressed"]

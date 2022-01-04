@@ -38,15 +38,30 @@ custom_colors/font_color = Color( 0.92549, 0.0941176, 0.0941176, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Game Over!"
 
-[node name="MainMenuButton" type="Button" parent="."]
+[node name="Restart" type="Button" parent="."]
 margin_left = 382.0
 margin_top = 313.0
 margin_right = 606.0
 margin_bottom = 402.0
 custom_colors/font_color = Color( 0.909804, 0.0588235, 0.678431, 1 )
 custom_fonts/font = SubResource( 2 )
+text = "Restart Level"
+flat = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenuButton2" type="Button" parent="."]
+margin_left = 382.0
+margin_top = 385.0
+margin_right = 606.0
+margin_bottom = 474.0
+custom_colors/font_color = Color( 0.909804, 0.0588235, 0.678431, 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Main Menu"
 flat = true
 script = ExtResource( 3 )
 
-[connection signal="pressed" from="MainMenuButton" to="MainMenuButton" method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="Restart" to="Restart" method="_on_Restart_pressed"]
+[connection signal="pressed" from="MainMenuButton2" to="MainMenuButton2" method="_on_MainMenuButton_pressed"]
